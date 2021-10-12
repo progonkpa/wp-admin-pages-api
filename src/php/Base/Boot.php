@@ -6,7 +6,6 @@
 namespace Plugin\Base;
 
 use Plugin\Pages\AdminPages;
-use Plugin\Pages\AlecadddPageSettingsLinks;
 
 final class Boot
 {
