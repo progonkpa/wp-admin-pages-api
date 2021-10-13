@@ -8,7 +8,9 @@ His code formed the foundation for this refactor.
 ## What is this?
 
 Using this code, you can **completely configure one admin page** by extending AbstractPage.  
-The page you just created contains all required information. 
+You can of course make as many admin pages as you want.
+
+After you implement your Page that inherits from AbstractPage, **it holds all required information** to complete the configuration. It contains: 
 - the main page (parent, admin menu item)
 - subpages (children, sub items)
 - WP Settings API arguments.
@@ -18,14 +20,9 @@ The page you just created contains all required information.
 - Technically, not ALL information is stored in Page.  
 HTML snippets are stored in Templates which feels tidy.
 
-You can of course make as many admin pages as you want.  
-All your pages will be registered by AdminPages, which in turn is triggered by Boot.  
+All your pages will be registered by AdminPages, triggered by Boot.  
 Do not forget to include your new Page in AdminPages though :)  
-That doesn't happen automatically now though we could build that in the future.
-
-To wrap up , the idea is you shouldn't have to make changes in AbstractPage and AdminPages.  
-You just add Page classes that extend AbstractPage in the Pages directory.
-
+That doesn't happen automatically now though that could be built in the future.
 
 
 ## <a id="alecaddd">Alecaddd WP plugin development tutorial</a>
