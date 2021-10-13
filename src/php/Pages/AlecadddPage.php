@@ -1,7 +1,9 @@
 <?php
 
 namespace Plugin\Pages;
-
+/**
+ * The concept of a Page class is explained in @see AbstractPage.
+ */
 class AlecadddPage extends AbstractPage
 {
     protected function page(): array

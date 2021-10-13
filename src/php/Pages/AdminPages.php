@@ -4,6 +4,10 @@ namespace Plugin\Pages;
 
 use Plugin\Base\Plugin;
 
+/**
+ * AdminPages is a place where you register all your admin pages.
+ * AdminPages holds the logic to register each Page you defined in the register method.
+ */
 class AdminPages
 {
     private array $pages;

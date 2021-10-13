@@ -2,6 +2,15 @@
 
 namespace Plugin\Pages;
 
+/**
+ * An instance of Page is a configuration data container object with a few helper methods for the job.
+ * As all abstract classes, it pulls up, in, all common variables and methods, while a child class implements
+ * the page specific information.
+ *
+ * A page implementation provides all configuration data specific to one admin page, admin menu item otherwise.
+ * A page holds information about the main page (parent, admin menu item), subpages (children, sub items)
+ * and WP Settings API parameters, more precisely settings, sections and fields.
+ */
 abstract class AbstractPage
 {
     protected array $page;
